@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.qCompileSdkVersion
+    defaultConfig {
+        applicationId "com.android.culqi.culqi_android"
+        minSdkVersion rootProject.qMinSdkVersion
+        targetSdkVersion rootProject.qTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:$qAppCompatVersion"
+    implementation "com.android.volley:volley:$qVolleyVersion"
+
+    testImplementation "junit:junit:$qJunitVersion"
+    androidTestImplementation "androidx.test:runner:$qRunnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$qEspressoVersion"
+
+}
