@@ -8,7 +8,7 @@
 
 ## Requisitos
 
-* Android 4.0 o superior.
+* Android 8.0 o superior.
 * Credenciales de comercio Culqi (1).
 
 ## Construye tu propio formulario
@@ -21,21 +21,21 @@ Una vez que haya recopilado la información de un cliente, tendrá que intercamb
 Puede crear tokens utilizando el método utilizando el método de instancia Culqi createToken
 Pasando el número de la tarjeta, cvv, la fecha de vencimiento y un correo
 
-```java
-Card card = new Card(“411111111111111”, “123”, 9, 2020, “wm@wm.com”);
+```kotlin
+val card = Card("411111111111111", "123", 9, 2025, "abc@prueba.com")
 
-Token token = new Token("{CODIGO COMERCIO}");
+val token = Token("pk_test_cbc6c27964d9d3ac")
+token.createToken(applicationContext, card, object : TokenCallback {
+    override fun onSuccess(token: JSONObject) {
+        try {
+            token["id"].toString()
+        } catch (ex: Exception) {
+        }
+    }
 
-token.createToken(getApplicationContext(), card, new TokenCallback() {
-      @Override
-      public void onSuccess(JSONObject token) {
-            // get Token
-            token.get("id").toString()
-      }
-      @Override
-      public void onError(Exception error) {
-      }
-});
+    override fun onError(error: Exception) {
+    }
+})
 ```
 
 ## Usando Tokens
