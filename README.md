@@ -2,6 +2,10 @@
 
 **Nota**: Esta biblioteca trabaja con la [v2](https://culqi.com/api/) de Culqi API.
 
+## Tarjetas de pruebas
+
+[Documentación de Tarjetas de prueba](https://docs.culqi.com/#/desarrollo/tarjetas)
+
 ## Requisitos
 
 * Android 4.0 o superior.
