@@ -1,4 +1,4 @@
-package com.android.culqi.culqi_android.Culqi
+package com.android.culqi.culqi_android.culqi
 
 /**
  * Created by culqi on 2/7/17.

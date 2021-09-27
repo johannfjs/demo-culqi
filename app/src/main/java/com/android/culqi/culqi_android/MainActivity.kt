@@ -1,11 +1,10 @@
 package com.android.culqi.culqi_android
 
 import androidx.appcompat.app.AppCompatActivity
-import com.android.culqi.culqi_android.Validation.Validation
+import com.android.culqi.culqi_android.validation.Validation
 import android.app.ProgressDialog
 import android.widget.TextView
 import android.os.Bundle
-import com.android.culqi.culqi_android.R
 import android.text.TextWatcher
 import android.text.Editable
 import android.text.InputFilter
@@ -13,9 +12,9 @@ import android.text.InputFilter.LengthFilter
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import com.android.culqi.culqi_android.Culqi.Card
-import com.android.culqi.culqi_android.Culqi.Token
-import com.android.culqi.culqi_android.Culqi.TokenCallback
+import com.android.culqi.culqi_android.culqi.Card
+import com.android.culqi.culqi_android.culqi.Token
+import com.android.culqi.culqi_android.culqi.TokenCallback
 import org.json.JSONObject
 import java.lang.Exception
 

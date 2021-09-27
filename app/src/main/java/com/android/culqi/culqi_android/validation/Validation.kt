@@ -1,4 +1,4 @@
-package com.android.culqi.culqi_android.Validation
+package com.android.culqi.culqi_android.validation
 
 import android.widget.TextView
 import java.util.*
