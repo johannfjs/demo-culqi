@@ -8,8 +8,8 @@ import org.json.JSONObject;
 
 public interface TokenCallback {
 
-    public void onSuccess(JSONObject token);
+    void onSuccess(JSONObject token);
 
-    public void onError(Exception error);
+    void onError(Exception error);
 
 }
